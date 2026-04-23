@@ -5,7 +5,6 @@
     --primario: #4682b4;
     --secundario: rgba(255, 193, 7, 1);
     --gris: #777171;
-    --rojo: #ff0000;
 }
 
 html{
@@ -17,6 +16,7 @@ body{
     font-weight: 700;
 }
 /*1 rem = 10px*/
+
 .titulo{
     /*no iniciar con numeros un class*/
     text-align: center;
@@ -27,4 +27,64 @@ body{
 .titulo span{
     font-size: 2rem;
     color: var(--secundario);
+}
+
+.contenedor{
+    width: 120rem;
+    margin-top: 0rem;
+    margin-right: auto;
+    margin-bottom: 0rem;
+    margin-left: auto;
+    /*margin: 0 auto 0 auto;    */
+    /*margin: 0 auto    */
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column; /* por defecto es row*/
+    justify-content: space-between; /*acomoda de manera justificada los elemento*/
+    /*align-items: center; el justify de columns*/
+}
+
+@media(min-width: 482px){
+}
+
+@media(min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+    }
+}
+
+@media(min-width: 1140px){
+}
+
+
+@media(min-width: 1400px){
+}
+
+.navegacion-principal a{
+    /*ackground-color: var(--primario);
+    display: inline;*/
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.hero{
+    background-image: url(../imagenes/decorn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
